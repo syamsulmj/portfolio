@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Router from './Router';
+import './assets/App.css';
 
 function App() {
   return (
     <div className="App">
-      kakakakaka
+      <Router></Router>
     </div>
   );
 }
