@@ -1,5 +1,5 @@
 ## THIS IS MY PORTFOLIO
-- The project is available at [syamsulmj.github.io/portfolio](syamsulmj.github.io/portfolio)
+- The project is available at [syamsulmj.github.io/portfolio](https://syamsulmj.github.io/portfolio/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
