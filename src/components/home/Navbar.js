@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, Icon } from "antd";
+import { getRealPathname } from '../../lib/Helpers';
 
 // const { SubMenu } = Menu;
 
@@ -17,13 +18,13 @@ const Navbar = (props) => {
         Syamsul MJ
       </Menu.Item>
       <Menu.Item key="home">
-        <a href="/">
+        <a href={`${getRealPathname()}/`}>
           <Icon type="home" />
           Home
         </a>
       </Menu.Item>
       <Menu.Item key="projects">
-        <a href="/projects">
+        <a href={`${getRealPathname()}/projects`}>
           <Icon type="project" />
           Projects
         </a>
