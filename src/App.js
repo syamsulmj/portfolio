@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Router from './Router';
 import './assets/App.css';
-import Navbar from './components/home/Navbar'
+import Navbar from './components/home/Navbar';
+import { getRealPathname } from './lib/Helpers';
 
 const App = () => {
-  const pathname = window.location.pathname; // .replace(/\//g, "");
-  const realPathname = pathname.includes("portfolio") ? pathname.replace("/portfolio/", "") : pathname.replace(/\//g, "");
-  const [current, setCurrent] = useState(realPathname === "" ? "home" : realPathname);
+  const [current, setCurrent] = useState(getRealPathname() === "" ? "home" : getRealPathname());
   const handleNavbarClick = e => {
     console.log('click ', e);
     if (e.key !== "none") {
@@ -14,7 +13,7 @@ const App = () => {
     }
   };
 
-  console.log(realPathname);
+  console.log(getRealPathname());
 
   return (
     <div className="App">

@@ -6,14 +6,15 @@ import {
  } from 'react-router-dom';
 import Home from './components/home/Home';
 import Projects from './components/projects/Projects';
+import { getRealPathname } from './lib/Helpers';
 
 const Router = () => {
   return (
     <Portfolio>
       <Switch>
         <div>
-          <Route path="/" component={ Home }/>
-          <Route path="/projects" component={ Projects }/>
+          <Route path={`${getRealPathname()}/`} component={ Home }/>
+          <Route path={`${getRealPathname()}/projects`} component={ Projects }/>
         </div>
       </Switch>
     </Portfolio>
