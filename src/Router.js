@@ -6,6 +6,7 @@ import {
  } from 'react-router-dom';
 import Home from './components/home/Home';
 import Projects from './components/projects/Projects';
+import Experiences from './components/experiences/Experiences';
 import { getRealPathname } from './lib/Helpers';
 import Navbar from './components/home/Navbar';
 
@@ -28,6 +29,7 @@ const Router = () => {
         <div>
           <Switch>
             <Route exact path="/" component={ Home }/>
+            <Route path="/experiences" component={ Experiences }/>
             <Route path="/projects" component={ Projects }/>
           </Switch>
         </div>

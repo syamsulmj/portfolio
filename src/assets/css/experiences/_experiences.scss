@@ -1,0 +1,45 @@
+.experience {
+  padding: 50px 4rem;
+
+  @media screen and (max-width: 720px) {
+    padding: 50px 1rem;
+  }
+  .job-div {
+    margin-bottom: 25px;
+    .title {
+      margin: 5px 0;
+      span {
+        font-weight: bold;
+        font-size: 1.3rem;
+        font-family: "Exo", sans-serif;
+      }
+
+      &.child {
+        margin-top: 25px;
+      }
+    }
+
+    .description {
+      padding-inline-start: 20px;
+
+      .heading-description {
+        margin-left: -20px;
+        margin-bottom: 15px;
+
+        &.child {
+          margin-top: 25px;
+        }
+
+        span {
+          &.special {
+            font-weight: bold;
+          }
+        }
+      }
+
+      li {
+
+      }
+    }
+  }
+}

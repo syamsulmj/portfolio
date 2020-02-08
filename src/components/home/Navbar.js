@@ -20,6 +20,12 @@ const Navbar = (props) => {
           Home
         </Link>
       </Menu.Item>
+      <Menu.Item key="experiences">
+        <Link to="/experiences">
+          <Icon type="area-chart" />
+          Experiences
+        </Link>
+      </Menu.Item>
       <Menu.Item key="projects">
         <Link to="/projects">
           <Icon type="project" />
