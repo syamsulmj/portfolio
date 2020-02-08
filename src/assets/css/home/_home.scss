@@ -1,0 +1,50 @@
+.home {
+  margin-top: 100px;
+  text-align: center;
+
+  .name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 15px;
+    animation: an 1s ease-out 1 both;
+
+    span {
+      animation: coloring 10s infinite;
+    }
+  }
+
+  @keyframes an {
+    from {
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes coloring {
+    0%  {color: #4e0ec4;}
+    15% {color: #422180;}
+    35% {color: #261940;}
+    55% {color: #3c3b3d;}
+    75% {color: #58357a;}
+    90% {color: #6825a8;}
+    100% {color: #6f17c2;}
+  }
+
+  .job {
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: slidein 2s;
+  }
+
+  @keyframes slidein {
+      0% { margin-left:-800px; opacity: 0;}
+      20% { margin-left:-800px; opacity: 0;}
+      35% { margin-left:0px; opacity: 1;}
+      100% { margin-left:0px; opacity: 1;}
+  }
+}
