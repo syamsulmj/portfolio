@@ -92,6 +92,10 @@
 
         &.custom-col {
           padding-top: 2rem;
+
+          &.vanished {
+            display: none;
+          }
         }
       }
       .title {
@@ -100,6 +104,10 @@
           font-weight: bold;
           font-size: 1.3rem;
         }
+
+        &.child {
+          margin-top: 25px;
+        }
       }
       .description {
         text-align: justify;
@@ -107,11 +115,36 @@
         @media screen and (max-width: 720px) {
           margin: 0;
         }
+
+        ul {
+          padding-inline-start: 20px;
+          li {
+            font-weight: bold;
+            font-family: 'Exo', sans-serif;
+            font-size: 1rem;
+            color: #7b7b7b;
+          }
+        }
+
+        .custom-button {
+          text-align: center;
+          margin-top: 25px;
+          .btn {
+            padding: .5rem;
+            border-radius: 20px;
+            border: 1px solid #1fad9e;
+            background-color: #00b3a1;
+            text-decoration: none !important;
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: bold;
+          }
+        }
       }
       .skills {
         padding-top: 2rem;
         li {
-          margin-bottom: 70px;
+          margin-bottom: 35px;
           background: #ebebeb;
           height: 20px;
           border-radius: 3px;
