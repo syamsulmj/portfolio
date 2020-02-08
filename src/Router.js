@@ -19,19 +19,19 @@ const Router = () => {
 
   return (
     <Portfolio>
-      <Switch>
-        <React.Fragment>
-          <Navbar
-              current={current}
-              handleNavbarClick={handleNavbarClick}
-            >
-          </Navbar>
-          <div>
-            <Route path="/" component={ Home }/>
+      <React.Fragment>
+        <Navbar
+            current={current}
+            handleNavbarClick={handleNavbarClick}
+          >
+        </Navbar>
+        <div>
+          <Switch>
+            <Route exact path="/" component={ Home }/>
             <Route path="/projects" component={ Projects }/>
-          </div>
-        </React.Fragment>
-      </Switch>
+          </Switch>
+        </div>
+      </React.Fragment>
     </Portfolio>
   )
 }
