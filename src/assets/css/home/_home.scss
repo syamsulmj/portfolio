@@ -1,6 +1,7 @@
 .home {
-  margin-top: 100px;
+  padding: 50px 0 25px 0;
   text-align: center;
+  background-color: #078282FF;
 
   .name {
     font-size: 3rem;
@@ -8,8 +9,17 @@
     margin-top: 15px;
     animation: an 1s ease-out 1 both;
 
+    @media screen and (max-width: 720px) {
+      font-size: 2rem;
+    }
+
     span {
-      animation: coloring 10s infinite;
+      background: linear-gradient(to right, #ffffff, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff, #000000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 400% 100%;
+      animation: coloring 6s ease-in-out infinite;
     }
   }
 
@@ -25,19 +35,20 @@
   }
 
   @keyframes coloring {
-    0%  {color: #4e0ec4;}
-    15% {color: #422180;}
-    35% {color: #261940;}
-    55% {color: #3c3b3d;}
-    75% {color: #58357a;}
-    90% {color: #6825a8;}
-    100% {color: #6f17c2;}
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
   }
 
   .job {
     font-family: 'Teko', sans-serif;
     font-weight: bold;
     font-size: 2rem;
+    color: #e8e8e8;
     animation: slidein 2s;
   }
 
@@ -46,5 +57,132 @@
       20% { margin-left:-800px; opacity: 0;}
       35% { margin-left:0px; opacity: 1;}
       100% { margin-left:0px; opacity: 1;}
+  }
+
+  .social-media {
+    display: inline-flex;
+    a {
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-right: 15px;
+      animation: slidein 2s;
+    }
+  }
+}
+
+.about-me {
+  padding: 3rem 15rem;
+
+  @media screen and (max-width: 720px) {
+    padding: 1rem 0;
+  }
+
+  .custom-row {
+    @media screen and (max-width: 720px) {
+      display: inline-block;
+    }
+
+    .ant-col {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @media screen and (max-width: 720px) {
+        width: 100%;
+
+        &.custom-col {
+          padding-top: 2rem;
+        }
+      }
+      .title {
+        margin: 5px 0;
+        span {
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+      }
+      .description {
+        text-align: justify;
+        font-size: 1rem;
+        @media screen and (max-width: 720px) {
+          margin: 0;
+        }
+      }
+      .skills {
+        padding-top: 2rem;
+        li {
+          margin-bottom: 70px;
+          background: #ebebeb;
+          height: 20px;
+          border-radius: 3px;
+          border: 1px solid #f0f0f0;
+          text-decoration: none;
+          list-style: none;
+
+          & em {
+            font-family: 'Exo', sans-serif;
+            font-size: 18px;
+            position: relative;
+            top: -30px;
+          }
+
+          & span {
+            height: 20px;
+            margin: -1px -1px;
+            background: linear-gradient(to right, #027ac2, #30b0ff, #73c4f5 , #73c4f5, #30b0ff, #1687cc);
+            position: absolute;
+          }
+        }
+
+        .skill-30 {
+          width:30%;
+          animation: skill-30 2s ease-out;
+        }
+
+        @keyframes skill-30 {
+          0%  { width:0px; }
+          100%{ width:30%; }
+        }
+
+        .skill-40 {
+          width:40%;
+          animation: skill-40 2s ease-out;
+        }
+
+        @keyframes skill-40 {
+          0%  { width:0px; }
+          100%{ width:40%; }
+        }
+
+        .skill-50 {
+          width:50%;
+          animation: skill-50 2s ease-out;
+        }
+
+        @keyframes skill-50 {
+          0%  { width:0px; }
+          100%{ width:50%; }
+        }
+
+        .skill-60 {
+          width:60%;
+          animation: skill-60 2s ease-out;
+        }
+
+        @keyframes skill-60 {
+          0%  { width:0px; }
+          100%{ width:60%; }
+        }
+
+        .skill-70 {
+          width:70%;
+          animation: skill-70 2s ease-out;
+        }
+
+        @keyframes skill-70 {
+          0%  { width:0px; }
+          100%{ width:70%; }
+        }
+      }
+    }
   }
 }
