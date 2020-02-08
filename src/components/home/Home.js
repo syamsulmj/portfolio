@@ -12,7 +12,7 @@ const Home = () => {
     if (!isMobile || displaySkills) {
       return null;
     }
-    if (window.scrollY > 135 && !displaySkills) {
+    if (window.scrollY > 120 && !displaySkills) {
       setDisplaySkills(true);
       return null;
     }
