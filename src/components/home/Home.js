@@ -23,13 +23,13 @@ const Home = () => {
     const onScroll = e => {
       setScrollTop(e.target.documentElement.scrollTop);
     };
-    
+
     if (!displaySkills) {
       window.addEventListener("scroll", onScroll);
     }
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
+  }, [scrollTop, displaySkills]);
 
   return (
     <React.Fragment>
@@ -80,11 +80,11 @@ const Home = () => {
                 <li>Fullstack Software Engineer at Naluri Hidup Sdn. Bhd.</li>
                 <li>Software Engineer (Software Graphics & Media Engineer) at Intel malaysia</li>
                 <li>Freelance Web Developer</li>
-                <li>Software Internship (web maintainer) in fave Malaysia</li>
+                <li>Software Internship (web maintainer) at Fave Malaysia</li>
               </ul>
               <div className="custom-button">
-                <Link to="/projects" className="btn">
-                  Get more details
+                <Link to="/experiences" className="btn">
+                  See more details
                   <Icon type="double-right"></Icon>
                 </Link>
               </div>
