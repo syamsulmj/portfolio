@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 import { Avatar, Icon, Row, Col } from 'antd';
 import { getRealRoute } from '../../lib/Helpers';
 
-const Home = () => {
+const Home = (props) => {
   const [scrollTop, setScrollTop] = useState(0);
   const [displaySkills, setDisplaySkills] = useState(false);
 
@@ -83,7 +83,7 @@ const Home = () => {
                 <li>Software Internship (web maintainer) at Fave Malaysia</li>
               </ul>
               <div className="custom-button">
-                <Link to="/experiences" className="btn">
+                <Link to="/experiences" className="btn" onClick={() => props.changeNavbarActive("experiences")}>
                   See more details
                   <Icon type="double-right"></Icon>
                 </Link>

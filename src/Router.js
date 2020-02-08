@@ -17,6 +17,9 @@ const Router = () => {
       setCurrent(e.key);
     }
   };
+  const changeNavbarActive = (component) => {
+    setCurrent(component);
+  }
 
   return (
     <Portfolio>
@@ -28,7 +31,7 @@ const Router = () => {
         </Navbar>
         <div>
           <Switch>
-            <Route exact path="/" component={ Home }/>
+            <Route exact path="/" component={() => <Home changeNavbarActive={changeNavbarActive} /> }/>
             <Route path="/experiences" component={ Experiences }/>
             <Route path="/projects" component={ Projects }/>
           </Switch>
