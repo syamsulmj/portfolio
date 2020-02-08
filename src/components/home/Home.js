@@ -3,7 +3,6 @@ import { Avatar, Icon, Row, Col } from 'antd';
 import { getRealRoute } from '../../lib/Helpers';
 
 const Home = () => {
-
   return (
     <React.Fragment>
       <div className="home">
@@ -17,17 +16,17 @@ const Home = () => {
           Full Stack Software Engineer
         </div>
         <div className="social-media">
-          <a href="https://www.linkedin.com/in/syamsul-mohd-jafri-3370a1158/" target="_blank">
+          <a href="https://www.linkedin.com/in/syamsul-mohd-jafri-3370a1158/" target="_blank" rel="noopener noreferrer">
             <span>
               <Icon type="linkedin"></Icon>
             </span>
           </a>
-          <a href="https://github.com/syamsulmj" target="_blank">
+          <a href="https://github.com/syamsulmj" target="_blank" rel="noopener noreferrer">
             <span>
               <Icon type="github"></Icon>
             </span>
           </a>
-          <a href="mailto:syamsulmj94@gmail.com" target="_blank">
+          <a href="mailto:syamsulmj94@gmail.com" target="_blank" rel="noopener noreferrer">
             <span>
               <Icon type="mail"></Icon>
             </span>
@@ -86,7 +85,6 @@ const Home = () => {
         </Row>
       </div>
     </React.Fragment>
-
   )
 }
 
