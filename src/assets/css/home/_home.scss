@@ -20,7 +20,7 @@
       background-clip: text;
       color: transparent;
       background-size: 400% 100%;
-      animation: coloring 6s ease-in-out infinite;
+      animation: coloring 6s ease-in-out;
     }
   }
 
@@ -168,6 +168,22 @@
             margin: -1px -1px;
             background: linear-gradient(to right, #027ac2, #30b0ff, #73c4f5 , #73c4f5, #30b0ff, #1687cc);
             position: absolute;
+
+            &.range {
+              background: transparent;
+              color: #ffffff;
+              font-weight: bold;
+
+              &.r-50 {
+                margin-left: 10.5rem;
+              }
+              &.r-60 {
+                margin-left: 13rem;
+              }
+              &.r-70 {
+                margin-left: 15.5rem;
+              }
+            }
           }
         }
 

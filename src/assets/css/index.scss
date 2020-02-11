@@ -1,11 +1,12 @@
 @import '~antd/dist/antd.css';
-
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 // Assets style
 @import './home/home';
 @import './projects/projects';
+@import './projects/image-carousel';
 @import './experiences/experiences';
-
 
 // GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
