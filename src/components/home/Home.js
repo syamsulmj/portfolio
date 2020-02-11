@@ -70,7 +70,7 @@ const Home = (props) => {
             <div className="description">
               I am an ambitious, extra hardworking, committed and a self-taught person.
               I have a vast knowledge in programming skills. My specialities field are more into web development
-              and also have a pretty strong base in programming logics.
+              and I also have a strong base in data structure and programming algorithm.
             </div>
             <div className="title child">
               <span>Experience</span>
@@ -96,34 +96,64 @@ const Home = (props) => {
             </div>
             <div className="skills">
               <li>
-                <span className="skill-70"></span><em>Elixir</em>
+                <span className="skill-70">
+                  <span className="range r-70">70%</span>
+                </span>
+                <em>Elixir</em>
               </li>
               <li>
-                <span className="skill-70"></span><em>Phoenix Framework</em>
+                <span className="skill-70">
+                  <span className="range r-70">70%</span>
+                </span>
+                <em>Phoenix Framework</em>
               </li>
               <li>
-                <span className="skill-60"></span><em>PHP</em>
+                <span className="skill-60">
+                  <span className="range r-60">60%</span>
+                </span>
+                <em>PHP</em>
               </li>
               <li>
-                <span className="skill-60"></span><em>Laravel</em>
+                <span className="skill-60">
+                  <span className="range r-60">60%</span>
+                </span>
+                <em>Laravel</em>
               </li>
               <li>
-                <span className="skill-50"></span><em>Javascript</em>
+                <span className="skill-50">
+                  <span className="range r-50">50%</span>
+                </span>
+                <em>Javascript</em>
               </li>
               <li>
-                <span className="skill-50"></span><em>React.JS</em>
+                <span className="skill-50">
+                  <span className="range r-50">50%</span>
+                </span>
+                <em>React.JS</em>
               </li>
               <li>
-                <span className="skill-50"></span><em>Shell Script</em>
+                <span className="skill-50">
+                  <span className="range r-50">50%</span>
+                </span>
+                <em>Shell Script</em>
               </li>
               <li>
-                <span className="skill-50"></span><em>Linux</em>
+                <span className="skill-50">
+                  <span className="range r-50">50%</span>
+                </span>
+                <em>Linux</em>
               </li>
               <li>
-                <span className="skill-70"></span><em>HTML5</em>
+                <span className="skill-70">
+                  <span className="range r-70">70%</span>
+                </span>
+                <em>HTML5</em>
               </li>
               <li>
-                <span className="skill-70"></span><em>CSS/SASS</em>
+                <span className="skill-70">
+                  <span className="range r-70">70%</span>
+                </span>
+                <em>CSS/SASS</em>
               </li>
             </div>
           </Col>

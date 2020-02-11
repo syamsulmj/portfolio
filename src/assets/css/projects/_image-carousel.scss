@@ -1,0 +1,67 @@
+.image-carousel {
+  display: inline-block;
+  height: 15rem;
+  width: calc(100vh - 22rem);
+  transition: opacity 2s;
+
+  &:hover {
+    opacity: .3;
+  }
+  img {
+    height: 15rem;
+    width: calc(100vh - 22rem);
+
+    &.mobile-image {
+      width: calc(100vh - 37.5rem);
+      margin-left: 28%;
+    }
+  }
+  button {
+    &.slick-arrow {
+      &.slick-prev:before, &.slick-next:before {
+        color: #000000 !important;
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  &.mobile {
+    button {
+      display: none !important;
+    }
+  }
+  .title {
+    margin-top: 20px;
+    span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+  .description {
+    margin-top: 10px;
+    text-align: left;
+    span {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.logo-img {
+  height: 15rem;
+  width: calc(100vh - 22rem);
+  position: absolute;
+  opacity: .5;
+
+  &.mobile-image {
+    margin: 5rem 9rem;
+    height: 5rem;
+    width: calc(100vh - 40rem);
+
+    @media screen and (max-width: 720px) {
+      margin: 5rem 9rem 5rem 2rem;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    margin-left: -6rem;
+  }
+}

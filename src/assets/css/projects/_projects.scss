@@ -1,0 +1,27 @@
+.projects {
+  margin: 50px 5rem;
+
+  @media screen and (max-width: 720px) {
+    margin: 25px 1rem;
+  }
+
+  .custom-row {
+    @media screen and (max-width: 720px) {
+      display: inline-grid;
+    }
+
+    .ant-col {
+      -webkit-text-align: center;
+      text-align: center;
+
+      .project-title {
+        margin-top: 10px;
+        span {
+          font-size: 1.2rem;
+          font-family: 'Exo', sans-serif;
+          color: #3f3f3f;
+        }
+      }
+    }
+  }
+}

@@ -55,25 +55,6 @@ const Experiences = () => {
       </div>
       <div className="job-div">
         <div className="title">
-          <span>Freelance Web Developer — 2016 - Present</span>
-        </div>
-        <ul className="description">
-          <div className="heading-description">
-            <span>
-              Developed and done quite decent amount of maintaining job previously.
-            </span>
-            <span className="special">Development tools mostly involved:</span>
-          </div>
-          <li>Laravel</li>
-          <li>PHP</li>
-          <li>Javascript</li>
-          <li>ReactJS</li>
-          <li>IoT Projects</li>
-          <li>Elixir (Phoenix Framework)</li>
-        </ul>
-      </div>
-      <div className="job-div">
-        <div className="title">
           <span>Software Internship (Web Maintainer) at Fave Malaysia — 2017</span>
         </div>
         <ul className="description">
@@ -90,6 +71,25 @@ const Experiences = () => {
           <li>SHELL SCRIPT</li>
           <li>GIT WORKFLOW</li>
           <li>RUBY</li>
+        </ul>
+      </div>
+      <div className="job-div">
+        <div className="title">
+          <span>Freelance Web Developer — 2016 - Present</span>
+        </div>
+        <ul className="description">
+          <div className="heading-description">
+            <span>
+              Developed and done quite decent amount of maintaining job previously.
+            </span>
+            <span className="special">Development tools mostly involved:</span>
+          </div>
+          <li>Laravel</li>
+          <li>PHP</li>
+          <li>Javascript</li>
+          <li>ReactJS</li>
+          <li>IoT Projects</li>
+          <li>Elixir (Phoenix Framework)</li>
         </ul>
       </div>
     </div>
