@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-// import { Icon } from 'antd';
-import { getImagePath } from '../../lib/Helpers';
+import { Typography } from 'antd';
 import { isMobile } from 'react-device-detect';
+
+const { Paragraph } = Typography;
 
 const ImageCarousel = (props) => {
   const [mobileLogoImage, setMobileLogoImage] = useState(props.slides[0].mobileImage);
+  const [showProjectTools, setShowProjectTools] = useState(false);
+
+  const changeSlide = (current) => {
+    setMobileLogoImage(props.slides[current].mobileImage);
+    setShowProjectTools(true);
+    setTimeout( () => {
+      setShowProjectTools(false);
+    }, 6000);
+  }
 
   const settings = {
     dots: true,
@@ -14,24 +24,33 @@ const ImageCarousel = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     accessibility: true,
-    afterChange: current => {
-      setMobileLogoImage(props.slides[current].mobileImage);
-    }
+    afterChange: current => {changeSlide(current)}
   };
 
   return (
     <React.Fragment>
-      <img className={`logo-img ${mobileLogoImage ? "mobile-image" : null}`} src={props.logo}/>
+      <div className="project-tools">
+        <div className={`project-logo ${showProjectTools ? "show" : null}`}>
+          Tools
+          {props.logo.map((logo, index) => (
+            <img src={logo} alt={`project-logo-${index}`} key={index}/>
+          ))}
+        </div>
+      </div>
       <Slider className={`image-carousel ${isMobile ? "mobile" : null}`} {...settings}>
-        {props.slides.map(slide =>
+        {props.slides.map((slide, index) =>
           (
-            <div>
+            <div key={index}>
               <img src={slide.image} className={`${slide.mobileImage ? "mobile-image" : null}`}/>
               <div className="title">
                 <span>{slide.title}</span>
               </div>
               <div className="description">
-                <span>{slide.description}</span>
+                <span>
+                  <Paragraph ellipsis={{ rows: 3, expandable: true }}>
+                    {slide.description}
+                  </Paragraph>
+                </span>
               </div>
             </div>
           )

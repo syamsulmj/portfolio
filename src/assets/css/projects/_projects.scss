@@ -6,13 +6,19 @@
   }
 
   .custom-row {
+    margin-bottom: 25px;
     @media screen and (max-width: 720px) {
       display: inline-grid;
+      margin-bottom: 0;
     }
 
     .ant-col {
       -webkit-text-align: center;
       text-align: center;
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
 
       .project-title {
         margin-top: 10px;
