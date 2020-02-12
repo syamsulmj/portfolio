@@ -12,7 +12,7 @@ const Home = (props) => {
     if (!isMobile || displaySkills) {
       return null;
     }
-    if (window.scrollY > 120 && !displaySkills) {
+    if (window.scrollY > 125 && !displaySkills) {
       setDisplaySkills(true);
       return null;
     }
@@ -84,7 +84,13 @@ const Home = (props) => {
               </ul>
               <div className="custom-button">
                 <Link to="/experiences" className="btn" onClick={() => props.changeNavbarActive("experiences")}>
-                  See more details
+                  See more experiences details
+                  <Icon type="double-right"></Icon>
+                </Link>
+              </div>
+              <div className="custom-button">
+                <Link to="/projects" className="btn" onClick={() => props.changeNavbarActive("projects")}>
+                  Previous Projects
                   <Icon type="double-right"></Icon>
                 </Link>
               </div>
