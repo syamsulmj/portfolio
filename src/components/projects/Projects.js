@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <React.Fragment>
       <div className="projects">
-      {allProjects.map((projectRow, index) => (
+      {allProjects.projects.map((projectRow, index) => (
           <Row className="custom-row" key={index}>
             {projectRow.rows.map((project, i) => (
               <Col span={12} key={i}>

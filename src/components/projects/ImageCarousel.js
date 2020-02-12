@@ -6,11 +6,9 @@ import { isMobile } from 'react-device-detect';
 const { Paragraph } = Typography;
 
 const ImageCarousel = (props) => {
-  const [mobileLogoImage, setMobileLogoImage] = useState(props.slides[0].mobileImage);
   const [showProjectTools, setShowProjectTools] = useState(false);
 
   const changeSlide = (current) => {
-    setMobileLogoImage(props.slides[current].mobileImage);
     setShowProjectTools(true);
     setTimeout( () => {
       setShowProjectTools(false);
@@ -41,7 +39,7 @@ const ImageCarousel = (props) => {
         {props.slides.map((slide, index) =>
           (
             <div key={index}>
-              <img src={slide.image} className={`${slide.mobileImage ? "mobile-image" : null}`}/>
+              <img src={slide.image} alt={`project-${index}`} className={`${slide.mobileImage ? "mobile-image" : null}`}/>
               <div className="title">
                 <span>{slide.title}</span>
               </div>

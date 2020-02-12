@@ -9,7 +9,7 @@
     margin-top: 15px;
     animation: an 1s ease-out 1 both;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 420px) {
       font-size: 2rem;
     }
 
@@ -52,7 +52,7 @@
     color: #e8e8e8;
     animation: slidein 2s;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 420px) {
       font-size: 1.7rem;
     }
   }
@@ -79,19 +79,19 @@
 .about-me {
   padding: 3rem 15rem;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 420px) {
     padding: 1rem 0;
   }
 
   .custom-row {
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 420px) {
       display: inline-block;
     }
 
     .ant-col {
       padding-left: 1rem;
       padding-right: 1rem;
-      @media screen and (max-width: 720px) {
+      @media screen and (max-width: 420px) {
         width: 100%;
 
         &.custom-col {
@@ -116,7 +116,7 @@
       .description {
         text-align: justify;
         font-size: 1rem;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 420px) {
           margin: 0;
         }
 
