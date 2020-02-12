@@ -2,11 +2,7 @@
   display: inline-block;
   height: 15rem;
   width: calc(100vh - 22rem);
-  transition: opacity 2s;
 
-  &:hover {
-    opacity: .3;
-  }
   img {
     height: 15rem;
     width: calc(100vh - 22rem);
@@ -40,7 +36,7 @@
     margin-top: 10px;
     text-align: left;
     span {
-      font-size: 1.1rem;
+      font-size: .8rem;
     }
   }
 }
@@ -63,5 +59,36 @@
 
   @media screen and (max-width: 720px) {
     margin-left: -6rem;
+  }
+}
+
+.project-tools {
+  position: absolute;
+  display: block;
+  width: 100%;
+
+  @media screen and (max-width: 720px) {
+    z-index: 1;
+  }
+
+  .project-logo {
+    display: block;
+    width: 3rem;
+    background: #000;
+    opacity: 0;
+    transition: opacity 2s;
+    float: right;
+    padding: .25rem;
+    color: #ffffff;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin-bottom: .3rem;
+    }
+
+    &.show {
+      opacity: 1;
+    }
   }
 }
